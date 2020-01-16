@@ -401,3 +401,55 @@ footer {
 .servicesFacts div ul li{
 	padding: 1% 0;
 }
+
+
+@media only screen and (max-width: 768px){
+	body{
+		width: 100%;
+	}
+
+	.serviceBoxes {
+	
+		display: flex;
+		flex-wrap: wrap;
+	}
+	
+	.serviceBoxes div{	
+		width: 100%;
+		padding: 2%;
+		border: 1px solid black;
+		margin: 1% auto;
+		background-color:#F4F3F4;
+	}
+	
+	.serviceBoxes div a{
+		padding: 2px 8%;
+		background-color: white;
+		border: 1px black solid;
+		border-radius: 7%;
+		margin: auto;
+	
+	
+	}
+	.serviceBoxes div p{
+		padding: 1% 0 3% 0;
+	}
+	.servicesFacts img, .services-header-img{
+		display: none;
+	}
+
+	nav{
+		display:inline-block;
+		width: 100%;
+		padding-bottom: 0%;
+	}
+	nav img{
+		margin-left: 0px;
+		margin-top: 0px;
+		padding-bottom: 0%;
+	}
+
+	.servicesHeader{
+		margin-top: 13%;
+	}
+}
