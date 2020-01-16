@@ -78,42 +78,45 @@ body{
 
 nav {
 	display: flex;
-	justify-content: space-around;
-	align-content: baseline;
-	padding: 0 2%;
+	justify-content: flex-start;
+	padding: 0 0%;
 	position: fixed;
 	top: 0;
+	
 	z-index: 99;
 	width: 890px;
 
 
 	background-color:white;
-	border-radius: 0 0 15px 15px;
-	border: 2px solid  black;
-	border-top: 0px;
 
 }
 nav a{
 	text-decoration: none;
-	color: black;
-	font-style: oblique;
+	color: rgba(201, 201, 202, 0.842);
+
 	font-weight: bolder;
-	padding: 0 22px ;
+	padding: 20px 22px 0 0px ;
 	margin: 0 auto;
 }
 nav img{
 	margin-left: 20px;
+	margin-top: -12px;
+}
+
+
+nav a:hover{
+	color: black;
 }
 
 /* animation and hover */
 
-@keyframes comic-pop {
+/* @keyframes comic-pop {
 	0%{font-size: 100%}
 	100%{font-size: 150%; }
 	
-}
+} */
 
-@-webkit-keyframes AnimationName {
+/* @-webkit-keyframes AnimationName {
     0%{background-position:64% 0%}
     50%{background-position:37% 100%}
     100%{background-position:64% 0%}
@@ -122,9 +125,9 @@ nav img{
     0%{background-position:64% 0%}
     50%{background-position:37% 100%}
     100%{background-position:64% 0%}
-}
+} */
 
-nav:hover{
+/* nav:hover{
 	background: linear-gradient(202deg, white, #00fdbc, #ffd800, #cd43ec);
 	background-size: 600% 600%;
 	-webkit-animation: AnimationName 6s ease infinite;
@@ -136,7 +139,7 @@ nav a:hover{
 	animation-duration: 1s;
 	animation-name: comic-pop;
 	font-size: 150%;
-}
+} */
 
 
 /* Logo title area and header image */
@@ -319,4 +322,82 @@ footer {
 	object-fit: cover;
 	margin: -66px 0 22px 0;
 	vertical-align: top;
+}
+
+
+/* services */
+
+.services-header-img{
+	margin: 5% auto 2%;
+}
+
+
+.servicesHeader{
+	padding-bottom: 4%;
+	border-bottom: 1px black solid;
+	margin-bottom: 3%;
+}
+
+
+.servicesHeader h1{
+	font-size: 25px;
+
+}
+
+
+.serviceBoxes {
+	
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.serviceBoxes div{	
+	width: 45%;
+	padding: 2%;
+	border: 1px solid black;
+	margin: 1% auto;
+	background-color:#F4F3F4;
+}
+
+.serviceBoxes div a{
+	padding: 2px 8%;
+	background-color: white;
+	border: 1px black solid;
+	border-radius: 7%;
+	margin: auto;
+
+
+}
+.serviceBoxes div p{
+	padding: 5px 0 40px 0;
+}
+
+
+.servicesFacts {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 30px;
+	padding-top: 40px;
+	border-top: 1px black solid;
+	padding-bottom: 10%;
+}
+
+.servicesFacts div{
+	display: flex;
+	flex-direction: column;
+}
+
+.servicesFacts div p{
+
+	padding: 2% 0;
+	width: 80%;
+}
+
+.servicesFacts div ul{
+	padding-top: 3%;
+	list-style-type: square;
+	margin-left: 5%;
+}
+.servicesFacts div ul li{
+	padding: 1% 0;
 }
