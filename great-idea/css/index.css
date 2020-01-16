@@ -189,8 +189,6 @@ nav a:hover{
 
 .title-section div a:hover{
 	
-	/* color: #48D1CC; */
-	/* font-family: 'Share Tech', sans-serif; */
 	background: linear-gradient(202deg, #00fdbc, #ffd800, #cd43ec);
 	background-size: 600% 600%;
 	animation: wahoo 6s ease infinite;
